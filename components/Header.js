@@ -45,6 +45,9 @@ function Header() {
           {[
             { title: "Home", route: "/" },
             { title: "Olanaklar", route: "/olanaklar" },
+            { title: "Odalar", route: "/odalar" },
+            { title: "Galeri", route: "/galeri" },
+            { title: "İletişim", route: "/iletisim" },
   
           ].map((navigationItem) => (
             <li className="mt-3 md:mt-0 md:ml-6" key={navigationItem.title}>
