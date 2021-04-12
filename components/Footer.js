@@ -8,10 +8,10 @@ const NavBar = () => (
     <div className="flex space-x-2">
       <div className="flex-1">
      
-        <span className="text-xs font-bold text-gray-50">© 2001 - {currentYear} All rights reserved.</span>
+        <span className="text-sm font-bold text-gray-50">© 2001 - {currentYear} All rights reserved.</span>
       </div>
       <div className="flex-1">
-        <span className="text-xs font-bold text-gray-50">
+        <span className="text-sm font-bold text-gray-50">
           Yalıkavak - Bodrum 
         </span>
       </div>
