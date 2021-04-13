@@ -15,14 +15,15 @@ function Header() {
        <Image
         src="/yukselfinal1.png"
         alt="Picture of the author"
-        width={80}
-        height={80}
+        width={75}
+        height={75}
       />
           <Link href="/">
-            <a className="text-xl font-semibold text-indigo-900 ml-2">Yüksel Butik Hotel</a>
+            <a className="text-3xl font-semibold text-indigo-900 ml-2">Yüksel Butik Hotel</a>
           </Link>
+         
         </div>
-
+        
         <button
           className="flex items-center block px-3 py-2 ml-2 text-white border border-white rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}

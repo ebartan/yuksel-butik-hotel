@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className="relative h-64 m-8 overflow-hidden rounded-lg bg-steel-500">
+      <div className="relative h-64 m-2 overflow-hidden rounded-lg bg-steel-500">
   <div className="absolute z-30 flex w-full h-full">
     <div className="relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2">
       <h2 className="text-4xl">Yalıkavakta denize sıfır aile işletmesi butik hotel</h2><span></span>
@@ -26,6 +26,7 @@ export default function Home() {
   <div className="absolute top-0 right-0 block w-9/12 h-full">
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/yuksel-cover.jpg"/></div>
 </div>
+<div> <p className="text-smd">Rezervasyon: +90 532 707 3303</p></div>
       </Layout>
   )
 }

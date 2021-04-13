@@ -9,7 +9,7 @@ export default function Odalar() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      
-      <div className="relative h-64 m-8 overflow-hidden rounded-lg bg-olive-300">
+      <div className="relative h-64 m-2 overflow-hidden rounded-lg bg-olive-300">
   <div className="absolute z-30 flex w-full h-full">
     <div className="relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2">
       <h2 className="text-4xl">Bol ışık alan odalarımızın her biri, konforlu bir konaklama imkanına sahiptir.</h2><span></span>
