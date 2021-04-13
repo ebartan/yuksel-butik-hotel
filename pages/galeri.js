@@ -24,7 +24,7 @@ export default function Home() {
     </div>
   </div>
   <div className="absolute top-0 right-0 block w-9/12 h-full">
-    <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/odalar.jpg"/></div>
+    <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/ustgorunum.jpg"/></div>
 </div>
 <div>Konfor tek hedefimiz değil, aynı zamanda iyi tasarıma ve tamamlanmış şık çağdaş mobilyalara da değer veriyoruz.
 Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen zengin doğa paletinin tonlarıyla.</div>
