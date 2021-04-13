@@ -19,7 +19,7 @@ function Header() {
         height={75}
       />
           <Link href="/">
-            <a className="text-3xl font-semibold text-indigo-900 ml-2">Yüksel Butik Hotel</a>
+            <a className="text-2xl font-semibold text-indigo-900 ml-1">Yüksel Butik Hotel</a>
           </Link>
          
         </div>
