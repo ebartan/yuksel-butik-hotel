@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       colors: {
         odalar: '#F28807',
+        galeri: '#F1380F',
+        iletisim: '#04C3D8',
         manatee: {
           '50':  '#fafafa',
           '100': '#f3f1f4',
