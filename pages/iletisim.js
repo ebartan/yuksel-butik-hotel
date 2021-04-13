@@ -23,7 +23,7 @@ export default function İletisim() {
     </div>
   </div>
   <div className="absolute top-0 right-0 block w-9/12 h-full">
-    <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/odalar.jpg"/></div>
+    <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/mai-deniz.jpg"/></div>
 </div>
 <div>
 <p>g.page/yukselbutikhotelyalikavak/review adresinden bize görüşlerinizi iletebilirsiniz.</p>
