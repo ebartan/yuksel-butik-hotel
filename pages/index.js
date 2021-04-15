@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Layout from "../components/Layout"
-
-export default function Home() {
+import Prismic from "prismic-javascript"
+import { Client } from "../prismic-configuration";
+import Image from 'next/image'
+export default function Home({olanaklar}) {
   return (
     <Layout>
       <Head>
@@ -26,7 +28,40 @@ export default function Home() {
   <div className="absolute top-0 right-0 block w-9/12 h-full">
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/yuksel-cover.jpg"/></div>
 </div>
-<div> <p className="text-smd">Rezervasyon: +90 532 707 3303</p></div>
+<div> <p className="text-xl ml-2">Rezervasyon: +90 532 707 3303</p></div>
+<div>
+  <div className="flex flex-wrap -mx-4 overflow-hidden ml-2">
+  {olanaklar.results.map((etkinlik) => (
+    
+        <div key={etkinlik.id} className="my-4 px-4 w-1/2 overflow-hidden md:w-1/4 lg:w-1/3 xl:w-1/6">
+        {etkinlik.data.baslik[0].text}{console.log(etkinlik.data.icon.url)}
+        <div className="w-16 sm:w-32 h-16 sm:h-32 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${etkinlik.data.icon.url})` }}></div>
+  </div>
+      
+    
+  ))}</div>
+</div>
       </Layout>
   )
+}
+
+
+export async function getServerSideProps({ query: { page = 1 } }) {
+  const olanaklar = await Client().query(
+    Prismic.Predicates.at("document.type", "olanaklar"),
+    {
+      pageSize: 100,
+      page: page,
+      orderings: "[document.last_publication_date desc]",
+    }
+  );
+
+  /* const homepage = await Client().getSingle("homepage");
+ */
+  return {
+    props: {
+      olanaklar: olanaklar,
+   
+    },
+  };
 }

@@ -8,11 +8,11 @@ const NavBar = () => (
     <div className="flex space-x-2">
       <div className="flex-1">
      
-        <span className="text-md font-bold text-gray-50">© 1987 - {currentYear}</span>
+        <span className="text-lg font-bold text-gray-50">© 1987 - {currentYear}</span>
       </div>
       <div className="flex-1">
-        <span className="text-md font-bold text-gray-50">
-          Yalıkavak - Bodrum - Turkey
+        <span className="text-lg font-bold text-gray-50">
+          Yalıkavak - Bodrum
         </span>
       </div>
     </div>
