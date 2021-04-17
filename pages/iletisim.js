@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from "../components/Layout"
+import { SiMessenger, SiGooglemybusiness } from 'react-icons/si';
 
 export default function İletisim() {
   return (
@@ -25,8 +26,13 @@ export default function İletisim() {
   <div className="absolute top-0 right-0 block w-9/12 h-full">
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/mavi-deniz.jpg"/></div>
 </div>
-<div>
-<p>g.page/yukselbutikhotelyalikavak/review adresinden bize görüşlerinizi iletebilirsiniz.</p>
+<div className="ml-2 mr-2m mt-2 mb-2">
+<p className="text-2xl">Bize farklı kanallar üzerinden rezervasyon başvurusu yapabilirsiniz;</p>
+<ul>
+<li> <SiMessenger size="2em" color="#04ABCD"/> - Facebook sayfamız üzerinden iletişim kurabilirsiniz.</li>
+  <li> <SiGooglemybusiness size="2em" color="#04ABCD"/>  - Google g.page/yukselbutikhotelyalikavak/review adresinden bize görüşlerinizi iletebilirsiniz.</li>
+</ul>
+
 </div>
       </Layout>
   )
