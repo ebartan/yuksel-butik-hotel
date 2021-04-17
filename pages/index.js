@@ -34,8 +34,9 @@ export default function Home({olanaklar}) {
   {olanaklar.results.map((etkinlik) => (
     
         <div key={etkinlik.id} className="my-4 px-4 w-1/2 overflow-hidden md:w-1/4 lg:w-1/3 xl:w-1/6">
-        {etkinlik.data.baslik[0].text}{console.log(etkinlik.data.icon.url)}
-        <div className="w-16 sm:w-32 h-16 sm:h-32 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${etkinlik.data.icon.url})` }}></div>
+        <p className="text-xl ml-2">{etkinlik.data.baslik[0].text}</p>
+        {console.log(etkinlik.data)}
+        <div className="w-16 sm:w-32 h-16 sm:h-32 ml-2 mt-2 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${etkinlik.data.icon.url})` }}></div>
   </div>
       
     

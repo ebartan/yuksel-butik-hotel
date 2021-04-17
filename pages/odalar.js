@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from "../components/Layout"
-
+import Image from 'next/image'
 export default function Odalar() {
   return (
     <Layout>
@@ -26,8 +26,16 @@ export default function Odalar() {
   <div className="absolute top-0 right-0 block w-9/12 h-full">
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/odalar.jpg"/></div>
 </div>
-<div>konfor tek hedefimiz değil, aynı zamanda iyi tasarıma ve tamamlanmış şık çağdaş mobilyalara da değer veriyoruz
-odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen zengin doğa paletinin tonlarıyla.</div>
+<div><p className=" text-xl ml-2 mr-2 mt-2 mb-2">Konfor tek hedefimiz değil, aynı zamanda tasarıma ve çağdaş mobilyalara da değer veriyoruz.
+Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen zengin doğa paletini görebilirsiniz.</p>
+<Image className="ml-2 mr-2 mt-2 mb-2"
+        src="/odalar-cover.jpg"
+        alt="Picture of the author"
+        width={820}
+        height={312}
+      />
+</div>
+<div><p className="text-2xl ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel 4 farklı oda tipi vardır. Single, Double, Triple ve Aile şeklinde toplam 12 oda ve 30 yatak bulunmaktadır. Odalarımızın kullanım alanı 16 m2 ile 24 m2 arasında değişmektedir.</p></div>
       </Layout>
   )
 }
