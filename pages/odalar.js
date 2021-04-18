@@ -32,7 +32,9 @@ export default function Odalar({odalar}) {
   <div className="absolute top-0 right-0 block w-9/12 h-full">
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/odalar.jpg"/></div>
 </div>
-<div><p className=" text-xl ml-2 mr-2 mt-2 mb-2">Konfor tek hedefimiz değil, aynı zamanda tasarıma ve çağdaş mobilyalara da değer veriyoruz.
+<div>
+  <p className=" text-xl ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel'in konuk odaları sizi Yalıkavak merkezin muhteşem manzarasına davet etmektedir.</p>
+  <p className=" text-xl ml-2 mr-2 mt-2 mb-2">Konfor tek hedefimiz değil, aynı zamanda tasarıma ve çağdaş mobilyalara da değer veriyoruz.
 Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen zengin doğa paletini görebilirsiniz.</p>
 <div className="ml-2 mr-2 mt-2 mb-2 animate-pulse"><Image 
         src="/odalar-cover.jpg"
