@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Layout from "../components/Layout"
+import Prismic from "prismic-javascript"
+import { Client } from "../prismic-configuration";
 import Image from 'next/image'
-export default function Odalar() {
+export default function Odalar({odalar}) {
   return (
     <Layout>
       <Head>
@@ -36,7 +38,34 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
       /></div>
 
 </div>
-<div><p className="text-xl ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel 4 farklı oda tipi vardır. Single, Double, Triple ve Aile şeklinde toplam 12 oda ve 30 yatak bulunmaktadır. </p><p className="text-xl ml-2 mr-2 mt-2 mb-2">Odalarımızın kullanım alanı 16 m2 ile 24 m2 arasında değişmektedir.</p></div>
+<div>
+  <p>Yüksel Butik Hotel 4 farklı oda tipi vardır.</p>
+  <div className="flex flex-wrap -mx-3 overflow-hidden">
+{odalar.results.map((oda) => (<div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4">{oda.uid}</div>))}
+</div>
+
+</div>
+<div><p className="text-xl ml-2 mr-2 mt-2 mb-2"> Single, Double, Triple ve Aile şeklinde toplam 12 oda ve 30 yatak bulunmaktadır. </p><p className="text-xl ml-2 mr-2 mt-2 mb-2">Odalarımızın kullanım alanı 16 m2 ile 24 m2 arasında değişmektedir.</p></div>
       </Layout>
   )
+}
+
+export async function getServerSideProps({ query: { page = 1 } }) {
+  const odalar = await Client().query(
+    Prismic.Predicates.at("document.type", "odalar"),
+    {
+      pageSize: 100,
+      page: page,
+      orderings: "[document.last_publication_date desc]",
+    }
+  );
+
+  /* const homepage = await Client().getSingle("homepage");
+ */
+  return {
+    props: {
+      odalar: odalar,
+   
+    },
+  };
 }

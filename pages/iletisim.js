@@ -1,6 +1,37 @@
+import React from 'react';
 import Head from 'next/head'
 import Layout from "../components/Layout"
-import { SiMessenger, SiGooglemybusiness, SiWhatsapp } from 'react-icons/si';
+import { SiFacebook, SiGooglemybusiness, SiWhatsapp,SiMessenger } from 'react-icons/si';
+
+
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker,
+  
+} from "react-google-maps";
+
+const defaultCenter = { lat: 37.1126175, lng: 27.2934141 };
+
+const defaultOptions = { scrollwheel: false };
+
+const RegularMap = withScriptjs(
+  withGoogleMap(props => (
+    <GoogleMap
+      defaultZoom={14}
+      defaultCenter={ defaultCenter }
+      defaultOptions={ defaultOptions }
+    >
+      <Marker position={ defaultCenter } />
+    </GoogleMap>
+  ))
+);
+
+const loadingElementStyle = { height: '100%' };
+const containerElementStyle = { height: '280px' };
+const mapElementStyle = { height: '100%' };
+
 
 export default function İletisim() {
   return (
@@ -26,12 +57,19 @@ export default function İletisim() {
   <div className="absolute top-0 right-0 block w-9/12 h-full">
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/mavi-deniz.jpg"/></div>
 </div>
+<div>  <RegularMap
+      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGA8CRQ8C0KzxKOjs6sA2uCqZakcWriy8"
+      loadingElement={<div style={ loadingElementStyle } />}
+      containerElement={<div style={ containerElementStyle } />}
+      mapElement={<div style={ mapElementStyle } />}
+    /></div>
 <div className="ml-2 mr-2m mt-2 mb-2">
 <p className="text-2xl">Bize farklı kanallar üzerinden rezervasyon başvurusu yapabilirsiniz;</p>
 <ul>
-<li className="flex"> <SiMessenger size="2em" color="#04ABCD" className=" mr-4"/> - Facebook sayfamız üzerinden iletişim kurabilirsiniz.</li>
-  <li className="flex"> <SiGooglemybusiness size="2em" color="#04ABCD" className=" mr-4"/>  - Google g.page/yukselbutikhotelyalikavak/review adresinden bize görüşlerinizi iletebilirsiniz.</li>
-  <li className="flex"> <SiWhatsapp size="2em" color="#04ABCD" className=" mr-4"/>  - Whatsapp üzerinden rezervasyon tarihi ve kişi sayısını belirterek fiyat alabilirsiniz.</li>
+  <li className="flex"><SiMessenger size="2em" color="#04ABCD" className="mr-4"/> <p className="text-2xl">Facebook sayfamız üzerinden iletişim kurabilirsiniz.</p></li>
+<li className="flex"> <SiFacebook size="2em" color="#04ABCD" className="mr-4"/> - Facebook sayfamız üzerinden iletişim kurabilirsiniz.</li>
+  <li className="flex"> <SiGooglemybusiness size="2em" color="#04ABCD" className="mr-4"/>  - Google g.page/yukselbutikhotelyalikavak/review adresinden bize görüşlerinizi iletebilirsiniz.</li>
+  <li className="flex"> <SiWhatsapp size="2em" color="#04ABCD" className="mr-4"/>  - Whatsapp üzerinden rezervasyon tarihi ve kişi sayısını belirterek fiyat alabilirsiniz.</li>
 </ul>
 
 </div>
