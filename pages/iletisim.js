@@ -32,8 +32,8 @@ const loadingElementStyle = { height: '100%' };
 const containerElementStyle = { height: '280px' };
 const mapElementStyle = { height: '100%' };
 
-const mapkey = process.env.GOOGLEMAPAPIKEY;
 const mapurl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDGA8CRQ8C0KzxKOjs6sA2uCqZakcWriy8"
+
 export default function İletisim() {
   return (
     <Layout>
@@ -76,12 +76,4 @@ export default function İletisim() {
 </div>
       </Layout>
   )
-}
-export async function getStaticProps() {
-  return {
-      props: {
-        key: process.env.GOOGLEMAPAPIKEY,
-         
-      }
-  }
 }
