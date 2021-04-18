@@ -34,8 +34,14 @@ export default function Home({olanaklar, odalar}) {
 </div>
 
 <div><p className="text-4xl ml-2 mr-2 mt-2 mb-2">Neden Yalıkavak?</p>
-    <p className="text-xl ml-2 mr-2 mt-2 mb-2">Yalıkavak Türkiye'nin son yıllarda en popüler tatil ve turiz merkezlerinden biridir. Yalıkavak Marina her yıl yüzbinlerce ziyaretçi ile yaz aylarının vazgeçilmez mekanlarından biridir.
-      </p></div>
+    <p className="text-2xl ml-2 mr-2 mt-2 mb-2">Yalıkavak Türkiye'nin son yıllarda en popüler tatil ve turiz merkezlerinden biridir. Yalıkavak Marina her yıl yüzbinlerce ziyaretçi ile yaz aylarının vazgeçilmez mekanlarından biridir.
+      </p>
+      <Image
+        src="/yalikavak-marina.jpg"
+        alt="Picture of the author"
+        width={1024}
+        height={563}
+      ></Image></div>
 <div>
 <div> <p className="text-2xl ml-2 mr-2 mt-2 mb-2">Rezervasyon: +90 532 707 3303</p></div>
   <div className="flex flex-wrap mx-3 overflow-hidden ml-2">
