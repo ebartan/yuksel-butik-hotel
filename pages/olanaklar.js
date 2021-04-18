@@ -30,10 +30,10 @@ export default function Olanaklar({olanaklar}) {
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/olanaklar.jpg"/></div>
 </div>
 <div>
-  <div className="flex flex-wrap -mx-4 overflow-hidden ml-2">
+  <div className="flex flex-wrap mx-4 overflow-hidden ml-2">
   {olanaklar.results.map((etkinlik) => (
     
-        <div key={etkinlik.id} className="my-4 px-4 w-1/2 overflow-hidden md:w-1/4 lg:w-1/3 xl:w-1/6">
+        <div key={etkinlik.id} className="my-4 px-4 w-1/2 overflow-hidden md:w-1/3 lg:w-1/3 xl:w-1/6">
         <p className="text-xl ml-2">{etkinlik.data.baslik[0].text}</p>
        
         <div className="w-16 sm:w-32 h-16 sm:h-32 ml-2 mt-2 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${etkinlik.data.icon.url})` }}></div>
@@ -41,6 +41,44 @@ export default function Olanaklar({olanaklar}) {
       
     
   ))}</div>
+</div>
+<div class="flex flex-wrap mx-3 overflow-hidden">
+
+  <div class="my-3 px-3 w-full overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+    <p className="text-5xl ml-2 mt-2 mb-2 mr-2">Plaj</p>
+    <p className="text-4xl ml-2 mt-2 mb-2 mr-2">Özel iskele ve Plaj</p>
+    <p className="text-3xl ml-2 mt-2 mb-2 mr-2">İçecek ve yiyecek servisi</p>
+  </div>
+
+  <div class="my-3 px-3 w-full overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+ <Image 
+        src="/plaj.jpg"
+        alt="Picture of the author"
+        width={600}
+        height={600}
+      />
+  </div>
+
+</div>
+
+<div class="flex flex-wrap mx-3 overflow-hidden">
+
+  <div class="my-3 px-3 w-full overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+   
+    <Image 
+        src="/bahce.jpg"
+        alt="Picture of the author"
+        width={600}
+        height={600}
+      />
+  </div>
+
+  <div class="my-3 px-3 w-full overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+  <p className="text-5xl ml-2 mt-2 mb-2 mr-2">Bahçe</p>
+    <p className="text-4xl ml-2 mt-2 mb-2 mr-2">Özel veranda ve şezlong</p>
+    <p className="text-3xl ml-2 mt-2 mb-2 mr-2">İçecek ve yiyecek servisi</p>
+  </div>
+
 </div>
       </Layout>
   )

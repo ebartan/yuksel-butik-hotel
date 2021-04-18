@@ -44,11 +44,11 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
 </div>
 <div>
   <p className="ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel 4 farklı oda tipi vardır.</p>
-  <div className="flex flex-wrap overflow-hidden">
+  <div className="flex flex-wrap overflow-hidden mx-3">
 {odalar.results.map((oda) => (
-<div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4">
-  <p className="text-3xl ml-2 mr-2 mt-2 mb-2">{oda.uid}</p>
-  <div className="w-96 sm:w-96 h-32 sm:h-32 ml-2 mr-2 mt-2 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${oda.data.resim.url})` }}></div>
+<div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4 border-r-2 border-gray-400">
+  <p className="text-5xl ml-2 mr-2 mt-2 mb-2">{oda.uid}</p>
+  <div className="w-96 sm:w-96 h-32 sm:h-32 ml-1 mr-1 mt-1 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${oda.data.resim.url})` }}></div>
   <div className="flex flex-wrap -mx-3 overflow-hidden">
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
