@@ -3,6 +3,9 @@ import Layout from "../components/Layout"
 import Prismic from "prismic-javascript"
 import { Client } from "../prismic-configuration";
 import Image from 'next/image'
+import { FaBath,FaUsers } from 'react-icons/fa';
+import { IoBed,IoCubeOutline } from 'react-icons/io5';
+
 export default function Odalar({odalar}) {
   return (
     <Layout>
@@ -45,6 +48,25 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
 <div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4">
   <p className="text-3xl ml-2 mr-2 mt-2 mb-2">{oda.uid}</p>
   <div className="w-80 sm:w-80 h-32 sm:h-64 ml-2 mt-2 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${oda.data.resim.url})` }}></div>
+  <div className="flex flex-wrap -mx-3 overflow-hidden">
+
+  <div className="my-3 px-3 w-1/4 overflow-hidden">
+    <IoCubeOutline size="2em" color="#04abcd"></IoCubeOutline>
+  </div>
+
+  <div className="my-3 px-3 w-1/4 overflow-hidden">
+    <FaUsers size="2em" color="#04abcd"></FaUsers>
+  </div>
+
+  <div className="my-3 px-3 w-1/4 overflow-hidden">
+    <IoBed size="2em" color="#04abcd"></IoBed>
+  </div>
+
+  <div className="my-3 px-3 w-1/4 overflow-hidden flex">
+    <FaBath size="2em" color="#04abcd"></FaBath><p className="text-xl">{oda.data.banyo}</p>
+  </div>
+
+</div>
   </div>))}
 </div>
 
