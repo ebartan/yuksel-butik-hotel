@@ -5,6 +5,7 @@ import { Client } from "../prismic-configuration";
 import Image from 'next/image'
 import { FaBath,FaUsers } from 'react-icons/fa';
 import { IoBed,IoCubeOutline } from 'react-icons/io5';
+import { GiBathtub } from 'react-icons/gi';
 
 export default function Odalar({odalar}) {
   return (
@@ -51,19 +52,19 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
   <div className="flex flex-wrap -mx-3 overflow-hidden">
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <IoCubeOutline size="2em" color="#04abcd"></IoCubeOutline><p className="text-xl">{oda.data.alan}</p>
+    <IoCubeOutline size="2em" color="#04abcd"></IoCubeOutline><p className="text-xl mt-2 ml-2">{oda.data.alan} &#13217;</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <FaUsers size="2em" color="#04abcd"></FaUsers><p className="text-xl">{oda.data.kisi}</p>
+    <FaUsers size="2em" color="#04abcd"></FaUsers><p className="text-xl mt-2 ml-2">{oda.data.kisi} Kişi</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <IoBed size="2em" color="#04abcd"></IoBed><p className="text-xl">{oda.data.yatak}</p>
+    <IoBed size="2em" color="#04abcd"></IoBed><p className="text-xl mt-2 ml-2">{oda.data.yatak} Yatak</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <FaBath size="2em" color="#04abcd"></FaBath><p className="text-xl mt-2 ml-2">{oda.data.banyo}</p>
+    <GiBathtub size="2em" color="#04abcd"></GiBathtub><p className="text-xl mt-2 ml-2">{oda.data.banyo} Banyo</p>
   </div>
 
 </div>

@@ -32,7 +32,8 @@ const loadingElementStyle = { height: '100%' };
 const containerElementStyle = { height: '280px' };
 const mapElementStyle = { height: '100%' };
 
-
+const mapkey = process.env.GOOGLEMAPAPIKEY;
+const mapurl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDGA8CRQ8C0KzxKOjs6sA2uCqZakcWriy8"
 export default function İletisim() {
   return (
     <Layout>
@@ -57,8 +58,8 @@ export default function İletisim() {
   <div className="absolute top-0 right-0 block w-9/12 h-full">
     <img alt="Snowy mountain lake" className="object-cover min-w-full h-full" src="/mavi-deniz.jpg"/></div>
 </div>
-<div>  <RegularMap
-      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGA8CRQ8C0KzxKOjs6sA2uCqZakcWriy8"
+<div>{console.log(mapurl)} <RegularMap
+      googleMapURL={mapurl}
       loadingElement={<div style={ loadingElementStyle } />}
       containerElement={<div style={ containerElementStyle } />}
       mapElement={<div style={ mapElementStyle } />}
@@ -75,4 +76,12 @@ export default function İletisim() {
 </div>
       </Layout>
   )
+}
+export async function getStaticProps() {
+  return {
+      props: {
+        key: process.env.GOOGLEMAPAPIKEY,
+         
+      }
+  }
 }
