@@ -34,14 +34,15 @@ export default function Odalar({odalar}) {
 </div>
 <div>
   <p className=" text-xl ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel'in konuk odaları sizi Yalıkavak merkezin muhteşem manzarasına davet etmektedir.</p>
-  <p className=" text-xl ml-2 mr-2 mt-2 mb-2">Konfor tek hedefimiz değil, aynı zamanda tasarıma ve çağdaş mobilyalara da değer veriyoruz.
-Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen zengin doğa paletini görebilirsiniz.</p>
-<div className="ml-2 mr-2 mt-2 mb-2 animate-pulse"><Image 
+  <div className="ml-2 mr-2 mt-2 mb-2 animate-pulse"><Image 
         src="/odalar-cover.jpg"
         alt="Picture of the author"
         width={820}
         height={312}
       /></div>
+  <p className=" text-xl ml-2 mr-2 mt-2 mb-2">Konfor tek hedefimiz değil, aynı zamanda tasarıma ve çağdaş mobilyalara da değer veriyoruz.
+Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen zengin doğa paletini görebilirsiniz.</p>
+
 
 </div>
 <div>
