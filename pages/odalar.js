@@ -52,19 +52,19 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
   <div className="flex flex-wrap -mx-3 overflow-hidden">
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <IoCubeOutline size="2em" color="#04abcd"></IoCubeOutline><p className="text-xl mt-2 ml-2">{oda.data.alan} &#13217;</p>
+    <IoCubeOutline size="2em" color="#04abcd"></IoCubeOutline><p className="text-lg mt-2 ml-2">{oda.data.alan} &#13217;</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <FaUsers size="2em" color="#04abcd"></FaUsers><p className="text-xl mt-2 ml-2">{oda.data.kisi} Kişi</p>
+    <FaUsers size="2em" color="#04abcd"></FaUsers><p className="text-lg mt-2 ml-2">{oda.data.kisi} Kişi</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <IoBed size="2em" color="#04abcd"></IoBed><p className="text-xl mt-2 ml-2">{oda.data.yatak} Yatak</p>
+    <IoBed size="2em" color="#04abcd"></IoBed><p className="text-lg mt-2 ml-2">{oda.data.yatak} Yatak</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <GiBathtub size="2em" color="#04abcd"></GiBathtub><p className="text-xl mt-2 ml-2">{oda.data.banyo} Banyo</p>
+    <GiBathtub size="2em" color="#04abcd"></GiBathtub><p className="text-lg mt-2 ml-2">{oda.data.banyo} Banyo</p>
   </div>
 
 </div>
