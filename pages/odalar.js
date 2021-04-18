@@ -43,27 +43,27 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
 </div>
 <div>
   <p className="ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel 4 farklı oda tipi vardır.</p>
-  <div className="flex flex-wrap -mx-3 overflow-hidden">
+  <div className="flex flex-wrap overflow-hidden">
 {odalar.results.map((oda) => (
 <div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4">
   <p className="text-3xl ml-2 mr-2 mt-2 mb-2">{oda.uid}</p>
-  <div className="w-80 sm:w-80 h-32 sm:h-64 ml-2 mt-2 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${oda.data.resim.url})` }}></div>
+  <div className="w-96 sm:w-96 h-32 sm:h-32 ml-2 mr-2 mt-2 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${oda.data.resim.url})` }}></div>
   <div className="flex flex-wrap -mx-3 overflow-hidden">
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <IoCubeOutline size="2em" color="#04abcd"></IoCubeOutline>
+    <IoCubeOutline size="2em" color="#04abcd"></IoCubeOutline><p className="text-xl">{oda.data.alan}</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <FaUsers size="2em" color="#04abcd"></FaUsers>
+    <FaUsers size="2em" color="#04abcd"></FaUsers><p className="text-xl">{oda.data.kisi}</p>
   </div>
 
   <div className="my-3 px-3 w-1/4 overflow-hidden">
-    <IoBed size="2em" color="#04abcd"></IoBed>
+    <IoBed size="2em" color="#04abcd"></IoBed><p className="text-xl">{oda.data.yatak}</p>
   </div>
 
-  <div className="my-3 px-3 w-1/4 overflow-hidden flex">
-    <FaBath size="2em" color="#04abcd"></FaBath><p className="text-xl">{oda.data.banyo}</p>
+  <div className="my-3 px-3 w-1/4 overflow-hidden">
+    <FaBath size="2em" color="#04abcd"></FaBath><p className="text-xl mt-2 ml-2">{oda.data.banyo}</p>
   </div>
 
 </div>
