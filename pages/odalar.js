@@ -34,12 +34,6 @@ export default function Odalar({odalar}) {
 </div>
 <div>
   <p className=" text-xl ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel'in konuk odaları sizi Yalıkavak merkezin muhteşem manzarasına davet etmektedir.</p>
-  <div className="ml-2 mr-2 mt-2 mb-2 animate-pulse"><Image 
-        src="/odalar-cover.jpg"
-        alt="Picture of the author"
-        width={820}
-        height={312}
-      /></div>
   <p className=" text-xl ml-2 mr-2 mt-2 mb-2">Konfor tek hedefimiz değil, aynı zamanda tasarıma ve çağdaş mobilyalara da değer veriyoruz.
 Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen zengin doğa paletini görebilirsiniz.</p>
 
@@ -47,6 +41,7 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
 </div>
 <div>
   <p className="ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel 4 farklı oda tipi vardır.</p>
+
   <div className="flex flex-wrap overflow-hidden mx-3">
 {odalar.results.map((oda) => (
 <div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4 border-r-2 border-gray-400">
@@ -71,6 +66,7 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
   </div>
 
 </div>
+<div><p>{oda.data.aciklama[0].text}</p></div>
   </div>))}
 </div>
 
