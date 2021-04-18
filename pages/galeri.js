@@ -14,7 +14,7 @@ export default function Home({galeri}) {
       <div className="relative h-64 m-2 overflow-hidden rounded-lg bg-olive-300">
   <div className="absolute z-30 flex w-full h-full">
     <div className="relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2">
-      <h2 className="text-3xl">Bol ışık alan odalarımızın her biri, konforlu bir konaklama imkanına sahiptir.</h2><span></span>
+      <h2 className="text-3xl">Bol ışık alan odalarımız, konforlu konaklama imkanına sahiptir.</h2><span className="text-xl">Fotoğraflara göz atınca burada keyifli zaman geçirmei hayal edebilirsiniz.</span>
     </div>
     <div className="absolute top-0 right-0 flex w-full h-full">
       <div className="w-1/3 h-full bg-galeri"></div>
