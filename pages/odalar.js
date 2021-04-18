@@ -39,9 +39,13 @@ Odalarımızın deniz manzaralı pencerelerinden ve teraslarından görülebilen
 
 </div>
 <div>
-  <p>Yüksel Butik Hotel 4 farklı oda tipi vardır.</p>
+  <p className="ml-2 mr-2 mt-2 mb-2">Yüksel Butik Hotel 4 farklı oda tipi vardır.</p>
   <div className="flex flex-wrap -mx-3 overflow-hidden">
-{odalar.results.map((oda) => (<div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4">{oda.uid}</div>))}
+{odalar.results.map((oda) => (
+<div key={oda.id} className="my-3 px-3 w-full overflow-hidden md:w-1/2 lg:w-1/4 xl:w-1/4">
+  <p className="text-3xl ml-2 mr-2 mt-2 mb-2">{oda.uid}</p>
+  <div className="w-80 sm:w-80 h-32 sm:h-64 ml-2 mt-2 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${oda.data.resim.url})` }}></div>
+  </div>))}
 </div>
 
 </div>

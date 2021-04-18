@@ -67,9 +67,9 @@ export default function İletisim() {
 <p className="text-2xl">Bize farklı kanallar üzerinden rezervasyon başvurusu yapabilirsiniz;</p>
 <ul>
   <li className="flex"><SiMessenger size="2em" color="#04ABCD" className="mr-4"/> <p className="text-2xl">Facebook sayfamız üzerinden iletişim kurabilirsiniz.</p></li>
-<li className="flex"> <SiFacebook size="2em" color="#04ABCD" className="mr-4"/> - Facebook sayfamız üzerinden iletişim kurabilirsiniz.</li>
-  <li className="flex"> <SiGooglemybusiness size="2em" color="#04ABCD" className="mr-4"/>  - Google g.page/yukselbutikhotelyalikavak/review adresinden bize görüşlerinizi iletebilirsiniz.</li>
-  <li className="flex"> <SiWhatsapp size="2em" color="#04ABCD" className="mr-4"/>  - Whatsapp üzerinden rezervasyon tarihi ve kişi sayısını belirterek fiyat alabilirsiniz.</li>
+
+  <li className="flex"> <SiGooglemybusiness size="2em" color="#04ABCD" className="mr-4"/> <p className="text-2xl">Google g.page/yukselbutikhotelyalikavak/review adresinden bize görüşlerinizi iletebilirsiniz.</p></li>
+  <li className="flex"> <SiWhatsapp size="2em" color="#04ABCD" className="mr-4"/><p className="text-2xl">Whatsapp üzerinden rezervasyon tarihi ve kişi sayısını belirterek fiyat alabilirsiniz.</p></li>
 </ul>
 
 </div>
